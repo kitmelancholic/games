@@ -1,8 +1,20 @@
 #ifndef TETRIS_GRID_H
 #define TETRIS_GRID_H
 
-class Grid {
+#include "vector"
 
+class Grid {
+public:
+    std::vector<std::vector<int>> GridMatrice;
+
+    Grid();
+
+    void Draw();
+
+    void Print();
+
+private:
+    void Init();
 };
 
 #endif //TETRIS_GRID_H

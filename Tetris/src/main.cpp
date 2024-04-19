@@ -1,23 +1,35 @@
 #include "raylib.h"
+#include "Grid.h"
+#include "GameConsts.h"
 
-int kScreenWidth = 720;
-int kScreenHeight = 1280;
+Grid GameGrid;
 
-int main() {
-
-    InitWindow(kScreenWidth, kScreenHeight, "Tetris");
-
+void Init() {
+    InitWindow(kWindowSize.x, kWindowSize.y, "Tetris");
     SetTargetFPS(60);
+}
 
+void GameCycle() {
     while (!WindowShouldClose()) {
         // Update
 
+        //GameGrid.Print();
+
         // Draw
         BeginDrawing();
-
+            ClearBackground(RAYWHITE);
+            GameGrid.Draw();
         EndDrawing();
     }
+}
 
+void Close() {
     CloseWindow();
+}
+
+int main() {
+    Init();
+    GameCycle();
+    Close();
     return 0;
 }
