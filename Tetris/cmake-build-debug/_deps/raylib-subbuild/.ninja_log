@@ -1,0 +1,23 @@
+# ninja log v5
+1	27	7352391997618449	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	3fda8dc4c73a3de3
+1	27	7352391997618449	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	3fda8dc4c73a3de3
+27	9838	7352392095728964	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/5.0.tar.gz	7110fbd4328f57ae
+27	9838	7352392095728964	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7110fbd4328f57ae
+27	9838	7352392095728964	raylib-populate-prefix/src/5.0.tar.gz	7110fbd4328f57ae
+9838	9864	7352392095985395	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	96310ba644acc460
+27	9838	7352392095728964	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7110fbd4328f57ae
+9838	9864	7352392095985395	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	96310ba644acc460
+9864	9889	7352392096235728	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	3fa08bbc4379c8b8
+9864	9889	7352392096235728	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	3fa08bbc4379c8b8
+9889	9914	7352392096486765	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	c0ead0d16b95097a
+9889	9914	7352392096486765	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	c0ead0d16b95097a
+9914	9938	7352392096732831	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	6a85d137eb9f0d5c
+9914	9938	7352392096732831	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	6a85d137eb9f0d5c
+9939	9964	7352392096993367	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	d37d3b225ba1989d
+9939	9964	7352392096993367	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	d37d3b225ba1989d
+9964	9989	7352392097238816	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	77053b0d20ef2152
+9989	10025	7352392097595587	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	7e3704e159907c15
+9964	9989	7352392097238816	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	77053b0d20ef2152
+9989	10025	7352392097595587	CMakeFiles/raylib-populate-complete	7e3704e159907c15
+9989	10025	7352392097595587	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	7e3704e159907c15
+9989	10025	7352392097595587	D:/code/simpleGames/Tetris/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	7e3704e159907c15
