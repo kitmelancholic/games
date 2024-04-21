@@ -5,7 +5,7 @@
 
 class Grid {
 public:
-    std::vector<std::vector<int>> GridMatrice;
+    std::vector<std::vector<int>> GridMatrix;
 
     Grid();
 
