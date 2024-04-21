@@ -1,7 +1,9 @@
 #include "Game.h"
 #include "raylib.h"
+#include "GameConsts.h"
 
 Game::Game() {
+    Score = 0;
 }
 
 void Game::HandleInput(int &hv, bool &up, bool &down) {
@@ -17,7 +19,6 @@ void Game::HandleInput(int &hv, bool &up, bool &down) {
     up = IsKeyPressed(KEY_UP);
 }
 
-
 void Game::CleanInput(int &hv, bool &up, bool &down) {
     hv = 0;
     up = false;
@@ -27,12 +28,14 @@ void Game::CleanInput(int &hv, bool &up, bool &down) {
 void Game::Draw() {
     BeginDrawing();
     ClearBackground(RAYWHITE);
+    DrawText("INCOMING:", kFirstTextBoxOffset.x, kFirstTextBoxOffset.y, 10, GRAY);
+    DrawText(TextFormat("LINES:      %04i", Score), kSecondTextBoxOffset.x, kSecondTextBoxOffset.y, 10, GRAY);
+    NextGrid.Draw();
     GameGrid.Draw();
     EndDrawing();
 }
 
-Game::~Game() {
-    //delete block;
+void Game::Restart() {
+    GameGrid.Clear();
+    Score = 0;
 }
-
-

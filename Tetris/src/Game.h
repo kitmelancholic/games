@@ -2,11 +2,14 @@
 #define TETRIS_GAME_H
 
 #include "raylib.h"
+#include "GameConsts.h"
 #include "Grid.h"
 
 class Game {
 public:
-    Grid GameGrid;
+    Grid GameGrid = {kGridSize, kGridOffset};
+    Grid NextGrid = {kNextGridSize, kNextGridOffset};
+    int Score;
 
     Game();
 
@@ -16,7 +19,7 @@ public:
 
     void Draw();
 
-    ~Game();
+    void Restart();
 
 private:
 };

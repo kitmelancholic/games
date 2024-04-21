@@ -9,6 +9,8 @@ class Block {
 public:
     Block(Vector2 position, int type);
 
+    bool InitIsAvailable(Grid &grid);
+
     void UpdateMoveDown(Grid &grid);
 
     void UpdateMoveHoriz(Grid &grid, int horizonX);

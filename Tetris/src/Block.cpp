@@ -11,6 +11,10 @@ Block::Block(Vector2 position, int type) : kBlockType(type) {
     Init();
 }
 
+bool Block::InitIsAvailable(Grid &grid) {
+    return (IsValidMove(Vector2{0, 0}, grid));
+}
+
 void Block::UpdateMoveDown(Grid &grid) {
     if (IsValidMove(Vector2{0, 1}, grid)) {
         BlockPosition.y += 1;
@@ -47,7 +51,7 @@ void Block::EraseFromGrid(Grid &grid) {
 bool Block::IsValidMove(Vector2 moveDir, Grid &grid) {
     for (Vector2 box: BlockList[RotateState]) {
         Vector2 newPos = {box.x + BlockPosition.x + moveDir.x, box.y + BlockPosition.y + moveDir.y};
-        if (newPos.x < 0 || newPos.y < 0 || newPos.y >= kGridSize.y || newPos.x >= kGridSize.x ||
+        if (newPos.x < 0 || newPos.y < 0 || newPos.y >= grid.gridSize.y || newPos.x >= grid.gridSize.x ||
             grid.GridMatrix[newPos.y][newPos.x] != 0) {
             return false;
         }
@@ -58,7 +62,7 @@ bool Block::IsValidMove(Vector2 moveDir, Grid &grid) {
 bool Block::IsValidRotate(int nextRotateState, Grid &grid) {
     for (Vector2 box: BlockList[nextRotateState]) {
         Vector2 newPos = {box.x + BlockPosition.x, box.y + BlockPosition.y};
-        if (newPos.x < 0 || newPos.y < 0 || newPos.y >= kGridSize.y || newPos.x >= kGridSize.x ||
+        if (newPos.x < 0 || newPos.y < 0 || newPos.y >= grid.gridSize.y || newPos.x >= grid.gridSize.x ||
             grid.GridMatrix[newPos.y][newPos.x] != 0) {
             return false;
         }
