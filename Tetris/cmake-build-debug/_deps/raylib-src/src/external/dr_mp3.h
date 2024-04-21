@@ -1947,7 +1947,7 @@ static void drmp3d_DCT_II(float *grbuf, int n)
             x6 = (x6 + x7)*0.70710677f;
             x7 =  x7 + xt;
             x3 = (x3 + x4)*0.70710677f;
-            x5 -= x7*0.198912367f;  /* rotate by PI/8 */
+            x5 -= x7*0.198912367f;  /* Rotate by PI/8 */
             x7 += x5*0.382683432f;
             x5 -= x7*0.198912367f;
             x0 = xt - x6; xt += x6;

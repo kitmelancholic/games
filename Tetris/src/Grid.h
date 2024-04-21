@@ -11,10 +11,12 @@ public:
 
     void Draw();
 
-    void Print();
+    void CheckClearedRows();
 
+    void Print();
 private:
     void Init();
+    void ClearRow(int row);
 };
 
 #endif //TETRIS_GRID_H

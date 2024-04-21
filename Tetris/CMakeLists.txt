@@ -29,7 +29,12 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_executable(tetris "src/main.cpp"
         src/Grid.cpp
         src/Grid.h
-        src/GameConsts.h)
+        src/GameConsts.h
+        src/Block.cpp
+        src/Block.h
+        src/Game.cpp
+        src/Game.h
+)
 
 #Link raylib to main
 target_link_libraries(tetris 
