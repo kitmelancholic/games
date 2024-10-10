@@ -78,7 +78,6 @@ int main() {
         // Draw
         game.Draw();
 
-
         if (!stoppedLastBlock) {
             block->EraseFromGrid(game.GameGrid);
         } else {
